@@ -22,7 +22,7 @@ http://www.guardian.co.uk/open-platform/getting-started
 
 * `max_pages`
   * Default: 0
-  * This the only paramenter that is not passed along to The Guardian API. If 
+  * This the only parameter that is not passed along to The Guardian API. If 
   `max_pages` is left at 0, then it will retrieve as many pages as possible. 
   Otherwise it will retrieve the minimum of the total number of pages avaible 
   and `max_pages`.
@@ -53,8 +53,8 @@ http://www.guardian.co.uk/open-platform/getting-started
 * `show_fields`
   * Default: None
   * Specifies the information wanted from the articles. Fields can be specified 
-  as comma-separated strings (eg: 'headline,standfirst,thumbnail' or use 'all' 
-  to get all avaiable data.
+  as comma-separated strings (eg: 'headline, standfirst, thumbnail' or use 'all' 
+  to get all available data.
 * `show_tags`
   * Default: None
   * Tags are not returned unless requested. `show_tags` can be set to 'all' or to
@@ -77,6 +77,5 @@ in the Big Data Week 13 Hackathon in Toronto:
 * http://viafoura.com/blog/viafoura-hack-a-thon-a-success/
 
 I would like to thank [Viafoura](http://viafoura.com) for sponsoring the Toronto 
-installment of [Big Data Week 13](http://viafoura.com/bdw/) and The Guardian for 
+instalment of [Big Data Week 13](http://viafoura.com/bdw/) and The Guardian for 
 providing the [Open Platform](http://www.guardian.co.uk/open-platform).
-
