@@ -43,7 +43,12 @@ class ArticleFetcher():
         """Retrieves the total number of pages for the current operation"""
         r = requests.get(self.url % 1)
         resp = (json.loads(r.text))['response']
-        return min(self.max_pages, resp['pages'])
+        if resp['status'] == 'error':
+            print("Error: " + resp['message'])
+        if self.max_pages == 0:
+            return resp['pages']
+        else:
+            return min(self.max_pages, resp['pages'])
 
     def get_data(self, page_number):
         """Fetches a page of articles from the API"""
